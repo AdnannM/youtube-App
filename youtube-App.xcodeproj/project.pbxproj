@@ -43,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6B0C673249A5F7000913A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6EBDE62247591CF00FEE8E0 /* AppDelegate.swift */,
+				A6EBDE6B247591D700FEE8E0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A6EBDE56247591CE00FEE8E0 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +71,10 @@
 		A6EBDE61247591CE00FEE8E0 /* youtube-App */ = {
 			isa = PBXGroup;
 			children = (
-				A6EBDE62247591CF00FEE8E0 /* AppDelegate.swift */,
+				A6B0C673249A5F7000913A59 /* Supporting Files */,
 				A6EBDE64247591CF00FEE8E0 /* ViewController.swift */,
 				A6EBDE66247591CF00FEE8E0 /* Main.storyboard */,
 				A6EBDE69247591D700FEE8E0 /* Assets.xcassets */,
-				A6EBDE6B247591D700FEE8E0 /* LaunchScreen.storyboard */,
 				A6EBDE6E247591D700FEE8E0 /* Info.plist */,
 				A629632A2485281F00C8CF8A /* Constants.swift */,
 				A629632C24852AB900C8CF8A /* Video.swift */,

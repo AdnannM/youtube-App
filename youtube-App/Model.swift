@@ -8,7 +8,15 @@
 
 import Foundation
 
+protocol ModelDelegate {
+	
+	func videoFetch(_ videos:[Video])
+}
+
 class Model {
+	
+	var delgate: ModelDelegate?
+	
 	func getVideo() {
 		
 		// Create a URL object
@@ -38,7 +46,14 @@ class Model {
 				
 				let response = try decoder.decode(Response.self, from: data!)
 				
-				dump(response)
+				if response.items != nil {
+					DispatchQueue.main.async {
+						// Call the vidio return methods of the delegate
+						self.delgate?.videoFetch(response.items!)
+					}
+				}
+				
+				// dump(response)
 				
 			} catch {
 				fatalError("Can't parse json")
